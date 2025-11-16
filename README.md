@@ -14,7 +14,6 @@ Chatbot educativo de inglés en Telegram que adapta respuestas según nivel del 
 - Telegram Bot API
 - Docker + Tailscale
 - Google Sheets (opcional para niveles)
-- GitHub + Git Sync
 
 ## Requerimientos Funcionales Cumplidos
 
@@ -38,3 +37,7 @@ Chatbot educativo de inglés en Telegram que adapta respuestas según nivel del 
 ollama pull gemma2:2b
 ollama serve
 # luego corre n8n con docker
+docker run -d --name n8n -p 5678:5678 n8nio/n8n
+
+# Acceder a n8n: http://localhost:5678
+
