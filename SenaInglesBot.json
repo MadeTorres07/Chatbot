@@ -1,0 +1,63 @@
+{
+  "name": "SenaInglesBot",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "fa0c8f0a-0079-44ed-a3d3-7059f5fcb5d5",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "chatId": "6738190211",
+        "text": "¡Bot funcionando! 🎉",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        256,
+        0
+      ],
+      "id": "ec7d6154-d7c6-42b2-a5c6-b121b2db4b81",
+      "name": "Send a text message",
+      "webhookId": "53924d1a-747d-4a8f-b549-d8ccaf61f85e",
+      "credentials": {
+        "telegramApi": {
+          "id": "bgk8MDhFNYHHGHpV",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a8939a13-ae75-411a-bb80-e6c6286c1f2c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9a1eda3f9d07f93de1e813a800aadb00a63bad7eacc6db92f24c9124f304b741"
+  },
+  "id": "SFzQCMZiZQWpZHSt",
+  "tags": []
+}
